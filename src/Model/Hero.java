@@ -7,20 +7,27 @@ public class Hero {
     public int HP;
 
     public Hero(String hero) {
-        if (hero.equals("Wizard")) {
-            this.attack = 6;
-            this.defence = 5;
-            this.typeOfHero = hero;
-        } else if (hero.equals("Archer")) {
-            this.attack = 4;
-            this.defence = 6;
-            this.typeOfHero = hero;
-        } else if (hero.equals("Berserker")) {
-            this.attack = 9;
-            this.defence = 7;
-            this.typeOfHero = hero;
-        } else {
-            System.out.println("The character you picked doesn't exist");
+        switch (hero) {
+            case "Wizard": {
+                this.attack = 6;
+                this.defence = 5;
+                this.typeOfHero = hero;
+            }
+            break;
+            case "Berserker": {
+                this.attack = 9;
+                this.defence = 7;
+                this.typeOfHero = hero;
+            }
+            break;
+            case "Archer": {
+                this.attack = 4;
+                this.defence = 6;
+                this.typeOfHero = hero;
+            }
+            break;
+            default:
+                System.out.println("The character you picked doesn't exist");
         }
     }
 
