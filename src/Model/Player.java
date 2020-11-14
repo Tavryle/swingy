@@ -2,7 +2,7 @@ package Model;
 
 import java.util.ArrayList;
 
-public class player {
+public class Player {
     public String name;
     public Hero hero;
     public Coordinate coordinate;
@@ -11,20 +11,20 @@ public class player {
     public ArrayList<String> artifact = new ArrayList<String>();
 
     public void createPlayer(String name, String heroType){
-        Hero store = new Hero(herotype);
+        Hero store = new Hero(heroType);
         this.name = name;
         this.level = 0;
         this.xp = 500;
         this.hero = store;
     }
-    public void destroyEnemy(villain){
+    public void destroyEnemy(Villain villain){
         if (villain.artifact.equals("Weapon")){
             this.hero.attack += 4;
             this.xp += 500;
         }
         else if(villain.artifact.equals("Armor")){
             this.hero.defence += 3;
-            this xp += 500;
+            this.xp += 500;
         }
         else if(villain.artifact.equals("Helm")){
             this.hero.HP += 5;
