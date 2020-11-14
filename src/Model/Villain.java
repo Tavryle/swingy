@@ -1,6 +1,6 @@
 package Model;
 
-public class Villain {
+public class Villain{
     public typeOfVillain villain;
     public String name;
     public String artifact;
@@ -8,7 +8,7 @@ public class Villain {
     public int y;
     public int x;
 
-    public villainInfo() {
+    public Villain() {
         String[] artifacts = {"Armor", "Weapon", "Helm"};
         String[] names = {"Giant", "Ghoul", "Hell_Hound"};
 
