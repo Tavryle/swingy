@@ -120,7 +120,7 @@ public class Game {
                 Map.newMap(player);
                 villList = store.createVillains();
                 store.makeCoordinates(villList, player);
-                SaveTheGame.SaveFile(player);
+                SaveTheGame.SaveToTheFile(player);
             }
         }catch (IOException e){
             System.out.println("couldn't move the Character");
@@ -144,7 +144,7 @@ public class Game {
                     case "1":{
                         System.out.println("\n");
                         if (Sim.battle(player, villain) == true){
-                            SaveTheGame.SaveFile(player);
+                            SaveTheGame.SaveToTheFile(player);
                             battle = false;
                         }
                         else{
@@ -155,7 +155,7 @@ public class Game {
                     break;
                     case "2":{
                         if (Sim.avoid(player, villain) == true){
-                            SaveTheGame.SaveFile(player);
+                            SaveTheGame.SaveToTheFile(player);
                             battle = false;
                         }
                     }

@@ -62,7 +62,7 @@ public class ConsoleMode {
                         playerObject.createPlayer(nameOfPlayer, "Beserker");
                     }
                     Map.newMap(playerObject);
-                    SaveTheGame.SaveFile(playerObject);
+                    SaveTheGame.SaveToTheFile(playerObject);
                     Game.movement(playerObject);
                     cycle = false;
                 }
