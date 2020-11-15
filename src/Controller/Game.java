@@ -4,6 +4,7 @@ import Model.Map;
 import Model.Player;
 import Model.SaveTheGame;
 import Model.Villain;
+import View.*;
 
 import java.io.BufferedReader;
 import java.io.Console;
@@ -89,7 +90,7 @@ public class Game {
                 }
                 break;
                 case "exit":{
-                    System.exit();
+                    System.exit(0);
                 }
                 break;
                 default:
@@ -148,7 +149,7 @@ public class Game {
                         }
                         else{
                             System.out.println("your character got destroyed ");
-                            System.exit();
+                            System.exit(0);
                         }
                     }
                     break;
