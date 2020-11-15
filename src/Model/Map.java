@@ -1,7 +1,7 @@
 package Model;
 
 public class  Map {
-    public int size;
+    public static int size;
 
     public void mapSize(Player player){
         if(player.level == 0) {
