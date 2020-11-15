@@ -5,6 +5,8 @@ public class Villain{
     public String name;
     public String artifact;
     public int power;
+    public int y;
+    public int x;
 
     public Villain() {
         String[] artifacts = {"Armor", "Weapon", "Helm"};

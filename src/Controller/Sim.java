@@ -25,7 +25,7 @@ public class Sim {
         System.out.println("You won the battle but not the war");
         return true;
     }
-    
+
     public static boolean avoid(Player player, Villain villain){
         if(player.hero.HP > 0){
             player.hero.HP--;
