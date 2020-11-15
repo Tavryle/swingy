@@ -5,8 +5,6 @@ public class Villain{
     public String name;
     public String artifact;
     public int power;
-    public int y;
-    public int x;
 
     public Villain() {
         String[] artifacts = {"Armor", "Weapon", "Helm"};
@@ -15,23 +13,19 @@ public class Villain{
         int random = (int) (Math.random() * 3);
         this.name = names[random];
         switch (name) {
-            case "Hell_Hound": {
+            case "Hell_Hound" -> {
                 this.artifact = artifacts[0];
                 this.power = 500;
             }
-            break;
-            case "Ghoul": {
+            case "Ghoul" -> {
                 this.artifact = artifacts[1];
                 this.power = 700;
             }
-            break;
-            case "Gaint": {
+            case "Gaint" -> {
                 this.artifact = artifacts[2];
                 this.power = 800;
             }
-            break;
-            default:
-                System.out.println("Nothing was picked");
+            default -> System.out.println("Nothing was picked");
         }
     }
     public String getName(){
