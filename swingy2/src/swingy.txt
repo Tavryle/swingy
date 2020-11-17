@@ -1,0 +1,7 @@
+Player Information: 
+Player Name: tav
+Hero class: null
+Level: 1000
+Xp: 500
+Attack: 0
+Defence: 0
