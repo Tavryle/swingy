@@ -10,6 +10,7 @@ import java.io.BufferedReader;
 import java.io.Console;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import javax.validation.constraints.NotNull;
 
 public class Game {
     public Villain[] createVillains(){
@@ -67,6 +68,7 @@ public class Game {
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         try{
+            @NotNull(message = "Movement is needed")
             String input = bufferedReader.readLine();
             switch (input){
                 case "1":{

@@ -7,7 +7,7 @@ import Model.SaveTheGame;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-//import javax.validation.constraints.*;
+import javax.validation.constraints.NotNull;
 
 public class ConsoleMode {
     public static void startingSwingy(){
@@ -20,12 +20,12 @@ public class ConsoleMode {
         try {
             boolean cycle = true;
             while (cycle) {
-              //  @NotBlank(message = "Player Name is needed") ;
                 String input = bufferedReader.readLine();
                 if (input.equals("1")) {
                     while (true) {
                         System.out.println(" What's your name? " + "\n");
                         input = null;
+
                         input = bufferedReader.readLine();
                         if (input.isEmpty() == false) {
                             if (input.equals("exit") == true) {

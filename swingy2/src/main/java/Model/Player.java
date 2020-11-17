@@ -1,8 +1,10 @@
 package Model;
 
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 
 public class Player {
+    @NotNull(message = "Player Name is needed")
     public String name;
     public Hero hero;
     public Coordinate coordinate;

@@ -1,7 +1,10 @@
 package Model;
 
+import javax.validation.constraints.NotNull;
+
 public class Villain{
     public typeOfVillain villain;
+    @NotNull(message = "Player Name is needed")
     public String name;
     public String artifact;
     public int power;

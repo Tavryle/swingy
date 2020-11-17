@@ -2,6 +2,7 @@ package Model;
 
 import Controller.Game;
 
+import javax.validation.constraints.NotNull;
 import java.io.BufferedReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -30,6 +31,7 @@ public class SaveTheGame {
     public static void loadPreviousPlayer(String name){
         try{
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+            @NotNull(message = "Player Name is needed")
             String line = bufferedReader.readLine();
             if (line == null){
                 System.out.println("couldn't load player");
